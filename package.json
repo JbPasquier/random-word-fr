@@ -1,0 +1,48 @@
+{
+  "name": "random-word-fr",
+  "version": "1.0.3",
+  "description": "Get a random French word",
+  "license": "MIT",
+  "repository": "jbpasquier/random-word-fr",
+  "author": {
+    "name": "Jean-Baptiste Pasquier",
+    "email": "contact@jbpasquier.eu"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "prepublish": "node fetch-words.js",
+    "pretest": "node fetch-words.js",
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "words.txt"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "bin",
+    "word",
+    "words",
+    "random",
+    "dict",
+    "word-list",
+    "list",
+    "fr",
+    "french",
+    "dictionary"
+  ],
+  "dependencies": {
+    "meow": "^3.4.0",
+    "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "got": "^5.1.0",
+    "mocha": "*",
+    "path-exists": "^2.0.0"
+  }
+}
